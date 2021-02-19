@@ -1,0 +1,107 @@
+  <!-- Page content -->
+     <div class="page-content content-mobile">
+        <!-- Nav -->
+        <div class="row">
+            <div class="col-lg-8 order-lg-1">
+              <div class="card">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-5 col-lg-8">
+                    <span class="h6">Добавить новую карту</span>
+                  </div>
+                  <div class="col-7 col-lg-4 text-right">
+                    <img alt="Image placeholder" src="/img/icons/cards/mastercard.png" width="40" class="mr-2">
+                    <img alt="Image placeholder" src="/img/icons/cards/visa.png" width="40" class="mr-2">
+                    <img alt="Image placeholder" src="/img/icons/cards/skrill.png" width="40">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="row mt-3">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="form-control-label">Номер карты</label>
+                        <div class="input-group input-group-merge">
+                          <input type="text" class="form-control" data-mask="0000 0000 0000 0000" placeholder="4789 5697 0541 7546">
+                          <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-credit-card"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label">Имя держателя карты</label>
+                        <input type="text" class="form-control" placeholder="John Doe">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label class="form-control-label">Срок действия</label>
+                        <input type="text" class="form-control" data-mask="00/00" placeholder="MM/YY">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label class="form-control-label">CVV</label>
+                        <div class="input-group input-group-merge">
+                          <input type="text" class="form-control" data-mask="000" placeholder="746">
+                          <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-question-circle"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <button type="button" class="btn btn-sm btn-primary rounded-pill">Добавить карту</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h5 class=" h6 mb-0">Изменить пароль</h5>
+              </div>
+              <div class="card-body">
+                <form method="POST" action="/user/change_password" class="send-form">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label">Старый пароль</label>
+                        <input required name="password" class="form-control" type="password">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label">Новый пароль</label>
+                        <input required name="new_password" class="form-control" type="password">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label">Подтвердить пароль</label>
+                        <input required name="passwordConfirm" class="form-control" type="password">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="alert alert-danger error-form d-none ml-3 ml-3" role="alert">
+                      <div></div>
+                  </div>
+                  <div class="alert alert-success d-none changed-success mt-2 mb-2" role="alert">
+                        <div>Пароль успешно изменен!</div>
+                  </div>
+                  <div class="mt-4">
+                    <button type="submit" class="btn btn-sm btn-primary rounded-pill">Обновить пароль</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
